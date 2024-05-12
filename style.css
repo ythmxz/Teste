@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -18,7 +19,7 @@ main {
 }
 
 .container label {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-family: "JetBrains Mono";
   font-size: 16px;
   font-weight: 400;
@@ -33,7 +34,7 @@ main {
 }
 
 .container input {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 8px;
   padding: 6px 10px;
@@ -43,7 +44,7 @@ main {
 }
 
 .container button {
-  margin: 0 auto;
+  margin-bottom: 30px;
   padding: 6px 10px;
   border: none;
   border-radius: 6px;
@@ -60,18 +61,50 @@ main {
   transform: scale(1.05);
 }
 
-/* Div da Reposta */
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
 .res {
   display: flex;
   flex-direction: column;
-  width: 230px;
-  height: 20px;
-  margin-top: 20px;
+  min-width: 230px;
   padding: 6px 10px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #f9f9f9;
   font-family: "JetBrains Mono";
   font-size: 16px;
   font-weight: 400;
+}
+
+.span--placeholder {
+  color: #757575;
+  font-weight: 200;
+}
+
+.btn-limpar {
+  height: 30px;
+  width: 30px;
+  background-position: center;
+  background-size: cover;
+  background-color: #f9f9f9;
+  background-image: url(./btn-limpar.png);
+  border: none;
+  border-radius: 6px;
+  color: #141414;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-limpar:hover {
+  background-color: hotpink;
+  background-image: url(./btn-limpar-hover.png);
+  color: #f9f9f9;
+  transform: scale(1.15);
 }

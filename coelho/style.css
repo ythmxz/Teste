@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  width: 250px;
+}
+
+.container label {
+  margin-bottom: 4px;
+  font-family: 'JetBrains Mono';
+  font-size: 16px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.container input {
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-family: 'JetBrains Mono';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container button {
+  justify-self: center;
+  width: fit-content;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.container button:hover {
+  background-color: hotpink;
+  color: #f9f9f9;
+  transform: scale(1.05);
+}
+
+.container script {}
+
+/* ata, os cara muda a cada linguagem sfd */
+/* como faz pra colocar um titulo, tipo, só um texto centralizado e maior em cima, escrito CALCULADORA */
+/* kkkkkkkkkkk, podia ser algo padrão e fácil. Eu gosto do JS que é "//" para linha e desse jeito para bloco */
+/* Se quer comentar, aperta ctrl + ; que aparece */

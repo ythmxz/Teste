@@ -1,0 +1,9 @@
+{
+  "liveshare.allowGuestDebugControl": true,
+  "liveshare.allowGuestTaskControl": true,
+  "liveshare.languages.allowGuestCommandControl": true,
+  "liveshare.launcherClient": "visualStudioCode",
+  "liveshare.accessibility.voice": "pt-BR-Antonio",
+  "liveshare.notebooks.allowGuestExecuteCells": true,
+  "liveshare.publishWorkspaceInfo": true
+}

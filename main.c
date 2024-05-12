@@ -2,13 +2,18 @@
 
 int main() {
 
-  int num1 = 1;
-  int num2 = 2;
-  int soma = num1 + num2;
-  printf(soma);
-  
-  
-  
+  float valor1 = 0, valor2 = 0, resultado = 0;
+
+  printf("Digite o primeiro valor: ");
+  scanf("%f", &valor1);
+
+  printf("Digite o segundo valor: ");
+  scanf("%f", &valor2);
+
+  resultado = valor1 + valor2;
+
+  printf("%g + %g = %g", valor1, valor2, resultado);
+
   return 0;
-  
+
 }

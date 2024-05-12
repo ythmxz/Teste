@@ -1,12 +1,28 @@
-<head>TITULO FODAO *pular linha* n sei pular linha :(</head>
+<head>
+  <title>CALCULADORA</title>
+</head>
 <body>
-  <p>oi, KRL, fiz um site trste tapoha atualiza automatico</p>
+  <label for="num1">Digite o numero 1</label>
+  <input type="number" id="num1"/>
+  <label for="num2">Digite o numero 2</label>
+  <input type="number" id="num2">
+  <button class="btn">SOMA</button>
+  <div class="res"></div>
   <script>
-    const num1 = prompt("Digite um número")
-    const num2 = prompt("Digite um número")
-    const soma = num1 + num2;
-    alert()
+    const inputDeNumero1 = document.querySelector("#num1");
+    const inputDeNumero2 = document.querySelector("#num2");
+    
+    const btn = document.querySelector(".btn");
+    const res = document.querySelector(".res");
+    btn.addEventListener("click", () => {
+      const num1 = inputDeNumero1.value
+      const num2 = inputDeNumero2.value
+      const soma = num1 + num2;
+      res.innerHTML = `Essa é a soma do numero 1 e 2: ${soma}`
+    });
+    
+    
   </script>
 </body>
-<legs>fdsfgd</legs>
-<foot></foot>
+
+<!-- Mentira, agora vai. Tinha esquecido de apagar o console. -->

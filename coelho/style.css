@@ -4,25 +4,32 @@
 
 main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #141414;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
-
   width: 250px;
 }
 
 .container label {
   margin-bottom: 4px;
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #f9f9f9;
+  transition: 0.4s;
+}
+
+.container label:hover {
+  background-color: transparent;
+  color: hotpink;
+  transform: scale(1);
 }
 
 .container input {
@@ -30,22 +37,21 @@ main {
   border: none;
   border-radius: 8px;
   padding: 6px 10px;
-  font-family: 'JetBrains Mono';
+  font-family: "JetBrains Mono";
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .container button {
-  justify-self: center;
-  width: fit-content;
+  margin: 0 auto;
   padding: 6px 10px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background-color: #f9f9f9;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16px;
-  font-weight: 500;
-  transition: .2s;
+  font-weight: 400;
+  transition: 0.2s;
 }
 
 .container button:hover {
@@ -54,9 +60,18 @@ main {
   transform: scale(1.05);
 }
 
-.container script {}
-
-/* ata, os cara muda a cada linguagem sfd */
-/* como faz pra colocar um titulo, tipo, só um texto centralizado e maior em cima, escrito CALCULADORA */
-/* kkkkkkkkkkk, podia ser algo padrão e fácil. Eu gosto do JS que é "//" para linha e desse jeito para bloco */
-/* Se quer comentar, aperta ctrl + ; que aparece */
+/* Div da Reposta */
+.res {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 20px;
+  margin-top: 20px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-family: "JetBrains Mono";
+  font-size: 16px;
+  font-weight: 400;
+}

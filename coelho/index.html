@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CALCULADORA</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <main>
+      <div class="container">
+        <label for="num1">Insira o primeiro valor:</label>
+        <input type="number" id="num1" placeholder="Ex.: 15" />
+        <label for="num2">Insira o segundo valor:</label>
+        <input type="number" id="num2" placeholder="Ex.: 10" />
+        <button class="btn">CONTINUAR</button>
+      </div>
+      <div class="res"></div>
+    </main>
+    <script>
+      const inputDeNumero1 = document.querySelector("#num1");
+      const inputDeNumero2 = document.querySelector("#num2");
+      const btn = document.querySelector(".btn");
+      const res = document.querySelector(".res");
 
-<body>
-  <main>
-    <div class="container">
-      <label for="num1">Insira o primeiro valor:</label>
-      <input type="number" id="num1" placeholder="Ex.: 15"/>
-      <label for="num2">Insira o segundo valor:</label>
-      <input type="number" id="num2" placeholder="Ex.: 10">
-      <button class="btn">CONTINUAR</button>
-    </div>
-    <div class="res"></div>
-  </main>
-  <script>
-    const inputDeNumero1 = document.querySelector("#num1");
-    const inputDeNumero2 = document.querySelector("#num2");
-    
-    const btn = document.querySelector(".btn");
-    const res = document.querySelector(".res");
+      btn.addEventListener("click", () => {
+        const num1 = parseFloat(inputDeNumero1.value);
+        const num2 = parseFloat(inputDeNumero2.value);
+        const soma = num1 + num2;
+        res.innerHTML = `${num1} + ${num2} = ${soma}`;
 
-    btn.addEventListener("click", () => {
-      const num1 = parseFloat(inputDeNumero1.value);
-      const num2 = parseFloat(inputDeNumero2.value);
-      const soma = num1 + num2;
-      res.innerHTML = `${num1} + ${num2} = ${soma}`;
-
-      inputDeNumero1.value = "";
-      inputDenumero2.value = "";
-    });
-    
-    
-  </script>
-</body>
+        inputDeNumero1.value = "";
+        inputDeNumero2.value = "";
+      });
+    </script>
+  </body>
 </html>
